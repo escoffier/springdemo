@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reading List</title>
+    <link rel="stylesheet" th:href="@{/style.css}"></link>
+</head>
+
+<body>
+<div>
+    <dl>
+        <dt class="readerHeadline">
+            <span th:text="${reader.username}">username</span> by
+            <span th:text="${reader.fullname}">fullname</span>
+            <span th:text="${reader.password}">password</span>
+        </dt>
+        <!--<dd class="bookDescription">-->
+        <!--<span th:if="${book.description}"-->
+        <!--th:text="${book.description}">Description</span>-->
+        <!--<span th:if="${book.description eq null}">-->
+        <!--No description available</span>-->
+        <!--</dd>-->
+    </dl>
+</div>
+</body>
+</html>
